@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>WORDLE</h1>
+
+         <button id="rules-btn">Rules</button>
+
+    <!-- The pop-up modal -->
+    <div id="rules-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="game-rules">Game Rules</h2>
+            <br>
+            <ol>
+                <li>Each guess must be a valid five-letter word.</li>
+                <li>The color of a tile will change to show you how close your guess was.</li>
+                <li>If the tile turns green, the letter is in the word, and it is in the correct position.</li>
+                <li>If the tile turns yellow, the letter is in the word, but it is not in the correct position.</li>
+                <li>If the tile turns gray, the letter is not in the word.</li>
+            </ol>
+        </div>
+    </div>
+
+        <br>
+        <hr>
+    </div>
+    <div class="words">
+        <div class="words-container">
+            <div class="word-row">
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+            </div>
+            <div class="word-row">
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+            </div>
+            <div class="word-row">
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+            </div>
+            <div class="word-row">
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+            </div>
+            <div class="word-row">
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+            </div>
+            <div class="word-row">
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+                <div class="word"></div>
+            </div>
+        </div>
+    </div>
+    <div class="keyboard">
+        <div class="keyboard-container">
+            <div>
+                <button data-key="Q">Q</button>
+                <button data-key="W">W</button>
+                <button data-key="E">E</button>
+                <button data-key="R">R</button>
+                <button data-key="T">T</button>
+                <button data-key="Y">Y</button>
+                <button data-key="U">U</button>
+                <button data-key="I">I</button>
+                <button data-key="O">O</button>
+                <button data-key="P">P</button>
+            </div> 
+            <div>
+                <button data-key="A">A</button>
+                <button data-key="S">S</button>
+                <button data-key="D">D</button>
+                <button data-key="F">F</button>
+                <button data-key="G">G</button>
+                <button data-key="H">H</button>
+                <button data-key="J">J</button>
+                <button data-key="K">K</button>
+                <button data-key="L">L</button>
+            </div> 
+            <div>
+                <button data-key="ENTER">ENTER</button>
+                <button data-key="Z">Z</button>
+                <button data-key="X">X</button>
+                <button data-key="C">C</button>
+                <button data-key="V">V</button>
+                <button data-key="B">B</button>
+                <button data-key="N">N</button>
+                <button data-key="M">M</button>
+                <button data-key="DELETE">DELETE</button>
+            </div> 
+        </div>
+    </div>
+
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>
